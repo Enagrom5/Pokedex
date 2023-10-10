@@ -10,10 +10,10 @@ function PokemonCard({ pokemon }) {
   
 
   return (
-    <figure>
+    <>
       {pokemon.imgSrc ? <img src={pokemon.imgSrc}></img> : <p>???</p>}
      {<p>{pokemon.name}</p>}
-    </figure>
+    </>
   );
 }
 
