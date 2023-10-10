@@ -1,19 +1,9 @@
-const pokemonList = [
-  {
-    name: "bulbasaur",
-    imgSrc:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-  },
-  {
-    name: "mew",
-  },
-];
-
-function PokemonCard() {
-  const pokemon = pokemonList[0].name;
+function PokemonCard({pokemon}) {
+  console.log(pokemon)
+  
   return (
     <p>
-      {pokemon === "bulbasaur" ? (
+      {pokemon.name === "bulbasaur" ? (
         <figure>
           <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"></img>
           <figcaption>Bulbasaur</figcaption>
