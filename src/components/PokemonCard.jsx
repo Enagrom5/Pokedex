@@ -10,7 +10,7 @@ const pokemonList = [
 ];
 
 function PokemonCard() {
-  const pokemon = pokemonList[1].name;
+  const pokemon = pokemonList[0].name;
   return (
     <p>
       {pokemon === "bulbasaur" ? (
