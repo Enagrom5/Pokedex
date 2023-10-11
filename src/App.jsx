@@ -30,27 +30,21 @@ const pokemonList = [
 ];
 
 function App() {
-  let [pokemonIndex, setPokemonIndex] = useState(0);
-  console.log(pokemonIndex);
-  let handleClickNext = () => {
-    setPokemonIndex(pokemonIndex + 1);
-    console.log(pokemonIndex);
-  };
-  let handleClickPrev = () => {
-    setPokemonIndex(pokemonIndex - 1);
-    console.log(pokemonIndex);
-  };
 
-  let pokemon = pokemonList[pokemonIndex];
+  let [pokemon, setPokemon] = useState(pokemonList[0])
+  
+ 
+
+  
   return (
     <div>
       <PokemonCard pokemon={pokemon} />
       <NavBar
-        pokemonIndex={pokemonIndex}
-        pokemonList={pokemonList}
-        handleClickNext={handleClickNext}
-        handleClickPrev={handleClickPrev}
-        setPokemonIndex={setPokemonIndex}
+       
+       pokemonList={pokemonList}
+       pokemon={pokemon}
+       setPokemon={setPokemon}
+       
       />
     </div>
   );
