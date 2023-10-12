@@ -1,7 +1,9 @@
 function NavBar({ pokemonList, pokemon, setPokemon }) {
   let handleClickChangePokemon;
+ 
+
   return (
-    <>
+    <div className="nav">
       {pokemonList.map((poke) => (
         <div>
           <button
@@ -18,7 +20,7 @@ function NavBar({ pokemonList, pokemon, setPokemon }) {
           setPokemon((pokemon = poke));
         })
       }
-    </>
+    </div>
   );
 }
 

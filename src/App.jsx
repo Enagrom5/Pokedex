@@ -41,14 +41,15 @@ alert("Hello, Pokemon trainer :)")
   
   return (
     <div>
-      <PokemonCard pokemon={pokemon} />
-      <NavBar
-       
+      <div className="nav">
+      <NavBar 
        pokemonList={pokemonList}
        pokemon={pokemon}
        setPokemon={setPokemon}
-       
-      />
+      /></div>
+      <div className="card">
+      <PokemonCard pokemon={pokemon} />
+      </div>
     </div>
   );
 }
